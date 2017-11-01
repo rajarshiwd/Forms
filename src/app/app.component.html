@@ -1,1 +1,46 @@
-<app-registration></app-registration>
+<div class = "container-fluid">
+    
+       
+          
+    <div class="col-xs-12" >
+    
+        <div class = "col-xs-6" style="height:800px;background-color:red" id ="large">
+    
+            
+            
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Domain Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let domain of Domains; let i = index" (click)="setClickedRow(i)" [class.active]="i == selectedRow">
+                        <td>{{domain}}</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="well well-lg">
+                Selected Row : <strong>{{selectedRow}}</strong>
+            </div>   
+       
+    
+    
+        </div>
+    
+    
+        <div class = "col-xs-6" style="height:800px;" >
+           
+    
+    
+        </div>
+    
+    
+    
+    
+        </div>
+    
+            </div>
+    
